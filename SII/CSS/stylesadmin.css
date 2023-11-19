@@ -1,0 +1,53 @@
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+form h2 {
+    text-align: center;
+    color: #661B3C;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+    color: #661B3C;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form .name-group, form .small-group {
+    display: flex;
+    gap: 10px;
+}
+
+form .name-group input, form .small-group input {
+    flex: 1;
+}
+
+form button {
+    background-color: #661B3C;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: end;
+}
+
+form button:hover {
+    background-color: #512036;
+}

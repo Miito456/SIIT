@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/stylesadmin.css">
+    <title>SIIT - Administrador</title>
+</head>
+<body>
+
+    <form id="adminForm">
+        <h2>Alta de Alumnos</h2> 
+        
+        <div class="name-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="name-group">
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+        </div>
+
+        <div class="name-group">
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+        </div>
+
+        <div class="small-group">
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </div>
+
+        <div class="small-group">
+            <label for="curp">CURP:</label>
+            <input type="text" id="curp" name="curp" required>
+        </div>
+
+        <div class="small-group">
+            <label for="noControl">No. de control:</label>
+            <input type="text" id="noControl" name="noControl" required>
+        </div>
+
+        <div class="small-group">
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" name="carrera" required>
+        </div>
+
+        <div class="small-group">
+            <label for="semestre">Semestre:</label>
+            <input type="text" id="semestre" name="semestre" required>
+        </div>
+
+        <button type="submit">Dar de alta</button>
+        <button onclick="window.location.href='../index.html'">Regresar</button>
+    </form>
+
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/adminScrpt.js"></script>
+
+</body>
+</html>

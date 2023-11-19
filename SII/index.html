@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>SIIT</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <h1 class="page-title">Sistema Integral de Información<br>Instituto Tecnológico de Durango</h1>
+        <img src="Images/logo.jpg" alt="Logo del Tecnológico">
+        <div class="buttons-container">
+            <button id="teacherBtn" onclick="openModal()">Maestro</button>
+            <button id="studentBtn" onclick="openModal()">Alumno</button>
+            <button id="adminBtn" onclick="openModal()">Administrador</button>
+        </div>
+    </div>
+
+
+    <div id="teacherModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-type="teacher">&times;</span>
+            <h2>Iniciar Sesión - Maestro</h2>
+            <form id="teacherLoginForm">
+                <label for="nip">NIP:</label>
+                <input type="text" id="nip" name="nip">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">                
+                <button type="button" onclick="login('teacher')">Ingresar</button>
+            </form>
+        </div>
+    </div>    
+
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-type="student">&times;</span>
+            <h2>Iniciar Sesión - Alumno</h2>
+            <form id="studentLoginForm">
+                <label for="studentId">Número de Control:</label>
+                <input type="text" id="studentId" name="studentId">
+                <label for="studentPassword">Contraseña:</label>
+                <input type="password" id="studentPassword" name="studentPassword">
+                <button type="button" onclick="login('student')">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-type="admin">&times;</span>
+            <h2>Iniciar Sesión - Administrador</h2>
+            <form id="adminLoginForm">
+                <label for="adminUsername">Usuario:</label>
+                <input type="text" id="adminUsername" name="adminUsername">
+                <label for="adminPassword">Contraseña:</label>
+                <input type="password" id="adminPassword" name="adminPassword">
+                <button type="button" onclick="login('admin')">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
